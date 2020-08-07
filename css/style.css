@@ -1,0 +1,80 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+main{
+  width:80%;
+  margin:auto;
+  background-image: linear-gradient(black, lightblue);
+}
+.imageContainer{
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  /* overflow: hidden; */
+  overflow: scroll;
+}
+
+.restaurant{
+  font-size: 50px;
+  width: 90%;
+  margin:100px auto;
+  text-align: center;
+
+}
+.restaurantImg{
+  width: 400px;
+  display:block;
+  margin:auto;
+  transition: width 2s;
+}
+
+.restaurantImg:hover{
+  width: 600px;
+  border-top-right-radius: 20%;
+}
+
+/* food.html */
+
+.imageRow{
+  width: 100%;
+
+}
+.col{
+  width:50%;
+  float:left;
+  padding:20px;
+  /* margin:20px; */
+
+}
+.imageRow::after{
+  clear:both;
+  display:table;
+  content:"";
+}
+.para{
+  width:80%;
+   margin-top: 20px;
+  /* padding:20px; */
+  line-height: 30px;
+  font-size: 25px;
+}
+.addCart{
+  width:80px;
+  height: 40px;
+  background:orange;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.backBtn{
+  width: 80px;
+  height: 40px;
+  background: black;
+  color: white;
+  border-radius: 15%;
+  display: block;
+  margin: 50px auto;
+}
